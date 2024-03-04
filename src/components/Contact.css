@@ -1,0 +1,63 @@
+.titel1 {
+    grid-area: titel1;
+}
+
+.titel2 {
+    grid-area: titel2;
+}
+
+.titel3 {
+    grid-area: titel3;
+}
+
+.input1 {
+    grid-area: input1;
+}
+
+.input2 {
+    grid-area: input2;
+}
+
+.input3 {
+    grid-area: input3;
+    padding-bottom: 5em;
+}
+
+.submit {
+    grid-area: submit;
+    background-color: #2c5380;
+    border-radius: 1em;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.grid-container_contact {
+    display: grid;
+    grid-template-areas:
+      'titel1 input1 input1 input1'
+      'titel2 input2 input2 input2'
+      'titel3 input3 input3 input3'
+      'submit submit submit submit';
+    gap: 3em 1em;
+    padding: 10px;
+  }
+
+.grid-container_contact > .submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container_contact > label {
+    text-align: right;
+}
+
+.text_input {
+    border: none;
+    border-left: 2px solid rgb(187, 187, 187);
+    border-bottom: 2px solid rgb(187, 187, 187);
+}
