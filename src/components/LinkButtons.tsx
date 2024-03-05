@@ -1,28 +1,19 @@
 import "./LinkButtons.css";
 import resume from "../assets/Michael Li Resume.pdf";
 
-const LinkButtons = () => {
+interface LinkButtonsProps {
+  buttonText: string;
+  url: string;
+  classname: string;
+}
+
+const LinkButtons = ({ buttonText, url, classname }: LinkButtonsProps) => {
+  // classname="button " + {classname};
   return (
     <>
-      <div className="grid-container_link">
-        <a
-          className="button item1"
-          href="http://linkedin.com/in/michaellishauching"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
-        <a
-          className="button item2"
-          href="https://github.com/LiMichael074"
-          target="_blank"
-        >
-          GitHub
-        </a>
-        <a className="button item3" href={resume} target="_blank">
-          Resume
-        </a>
-      </div>
+      <a className={"button " + classname} href={url} target="_blank">
+        {buttonText}
+      </a>
     </>
   );
 };

@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+.grid-container_link {
+  display: grid;
+  grid-template-areas:
+    'item1 item2 item3';
+
+  padding: 10px;
+}
